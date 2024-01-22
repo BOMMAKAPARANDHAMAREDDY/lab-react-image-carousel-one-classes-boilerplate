@@ -1,1 +1,78 @@
 /* write your carousel css in this file */
+.mainContainer {
+    position: relative;
+    width: 70%;
+    height: 80%;
+}
+
+.imageSpanContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imageSpanContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btnContainer {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.leftBtn,
+.rightBtn {
+    padding: 0 7px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.46);
+    opacity: inherit;
+}
+
+.leftBtn {
+    top: 0;
+    left: 0;
+}
+
+.leftBtn:hover {
+    cursor: pointer;
+}
+
+.rightBtn:hover {
+    cursor: pointer;
+}
+
+.rightBtn {
+    top: 0;
+    right: 0;
+}
+
+.text {
+    font-weight: 600;
+    position: absolute;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.687);
+}
+
+.title {
+    font-size: xx-large;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.subtitle {
+    font-size: large;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
